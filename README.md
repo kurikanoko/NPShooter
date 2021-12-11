@@ -1,5 +1,3 @@
-# NPShooter
-
 ## 動作環境
 
 python 3.8.5
