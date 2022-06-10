@@ -216,6 +216,12 @@ root=tk.Tk()
 root.title(u"NP Shooter")
 root.geometry("1850x980")
 root.configure(bg=color1)
+def doSomething():
+    ret = messagebox.askyesno("確認","ウィンドウを閉じますか？")
+    if ret == True:
+        root.quit()
+        sys.exit()#ちゃんと閉じれない　右上の×押すのと一緒
+root.protocol('WM_DELETE_WINDOW', doSomething)
 
 frame3=tk.Canvas(root,width=315,height=285,bg=color2)
 frame3.place(x=8,y=28)
